@@ -1,0 +1,10 @@
+  338  clear
+  339  who
+  340  clear
+  341  ls
+  342  histoy | tail -n 5 > historico.txt
+  328  echo meu pai
+  329  clear
+  330  ls
+  331  echo este é um teste > teste.txt
+  332  cast teste.txt
