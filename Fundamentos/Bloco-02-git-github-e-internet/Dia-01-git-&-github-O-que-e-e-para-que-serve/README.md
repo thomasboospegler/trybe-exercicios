@@ -14,7 +14,7 @@ Os requisitos dos exercícios são:
 
 
 ## Comandos utilizados no dia
-
+```
   496  cd trybe-exercicios
   497  ls
   498  touch trybe-skills.txt
@@ -68,4 +68,5 @@ Os requisitos dos exercícios são:
   546  git status
   547  history
   548  history -50
+```
 

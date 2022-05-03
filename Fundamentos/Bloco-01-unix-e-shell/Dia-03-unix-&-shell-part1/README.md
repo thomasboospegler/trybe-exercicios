@@ -12,6 +12,8 @@ Os requisitos dos exercícios são:
 
 4. Pesquisa dentro de arquivos 
 
+## Comandos utilizados no dia
+```
 595  mkdir unix_tests
 596  ls
 597  cd unix_tests
@@ -58,5 +60,4 @@ Os requisitos dos exercícios são:
 654  ls *.txt
 655  ls *.txt *.tbt
 656  man ls
-
-
+```
