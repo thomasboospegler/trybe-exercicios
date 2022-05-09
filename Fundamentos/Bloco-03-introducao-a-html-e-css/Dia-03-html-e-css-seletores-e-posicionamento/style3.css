@@ -1,0 +1,18 @@
+h1, p {
+    text-align: center;
+}
+li:hover {
+    background-color: lightblue;
+}
+li:active {
+    font-family: monospace;
+}
+ul {
+    list-style: symbols();
+    position: absolute;
+    left: 5%;
+    right: 50%;
+}
+ol {
+    list-style: lower-greek;
+}
