@@ -1,0 +1,37 @@
+div:hover {
+    border: 5px solid black;
+}
+div:nth-of-type(1):hover {
+    background-color: rgb(162, 162, 234);
+}
+div:nth-of-type(2):hover {
+    background-color: rgb(113, 113, 227);
+}
+div:nth-of-type(3):hover {
+    background-color: rgb(94, 94, 226);
+}
+div:nth-of-type(4):hover {
+    background-color: rgb(17, 17, 224);
+}
+div:nth-of-type(5):hover {
+    background-color: rgb(211, 211, 231);
+}
+div:nth-of-type(1) {
+    color: blue;
+}
+div:nth-of-type(2) {
+    color: aqua;
+}
+div:nth-of-type(3) {
+    color: rgb(29, 186, 45);
+    font-size: 20px;
+}
+div:nth-of-type(4) {
+    color: rgb(114, 106, 132);
+}
+div:nth-of-type(5) {
+    color: rgb(190, 61, 190);
+}
+div:nth-of-type(2n+1) {
+    font-style: italic;
+}
