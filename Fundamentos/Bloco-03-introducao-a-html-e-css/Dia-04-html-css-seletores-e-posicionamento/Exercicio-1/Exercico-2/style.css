@@ -79,6 +79,19 @@ li a {
     margin-bottom: 20px;
 }
 
-.first-article, .second-article, .third-article, .forth-article{
+.first-article, .second-article, .third-article, .forth-article, .fivth-article{
     margin: 3%;
+}
+
+.video {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    height: 315PX;
+}
+
+.footer {
+    text-align: center;
+    width: 100%;
+    padding-bottom: 10px;
 }
