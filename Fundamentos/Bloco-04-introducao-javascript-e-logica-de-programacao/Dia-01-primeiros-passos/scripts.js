@@ -30,17 +30,50 @@
 // console.log(perimeter);
 
 
-const notaCandidato = 70;
+// const notaCandidato = 70;
 
-if (notaCandidato >= 80 && notaCandidato <= 100) {
-  console.log("Parabéns, você foi aprovada(o)!")
-} 
-else if (notaCandidato < 80 && notaCandidato >= 60) {
-  console.log("Você esta na lista de espera");
+// if (notaCandidato >= 80 && notaCandidato <= 100) {
+//   console.log("Parabéns, você foi aprovada(o)!")
+// } 
+// else if (notaCandidato < 80 && notaCandidato >= 60) {
+//   console.log("Você esta na lista de espera");
+// }
+// else if (notaCandidato < 60) {
+//   console.log("Você foi reprovada(o)");
+// }
+// else {
+//   console.log("Digite um valor valido");
+// }
+
+
+// console.log(true && true); // true
+// console.log(true && false); // false
+// console.log(false && true); // false
+// console.log(false && false); // false
+
+const currentHour = 17;
+let message = "";
+
+if (currentHour >= 24) {
+  message = "Não deveríamos comer nada, é hora de dormir";
 }
-else if (notaCandidato < 60) {
-  console.log("Você foi reprovada(o)");
+else if (currentHour >= 18 && currentHour < 22) {
+  message = "Rango da noite, vamos jantar :D";
+}
+else if (currentHour >= 14 && currentHour < 18) {
+  message = "Vamos fazer um bolo pro café da tarde?";
+}
+else if (currentHour >= 11 && currentHour < 14) {
+  message = "Hora do almoço!!!";
+}
+else if (currentHour >= 4 && currentHour < 11) {
+  message = "Hmmm, cheiro de café recém passado";
+}
+else if (currentHour < 4) {
+  message = "Deveriamos estar dormindo";
 }
 else {
-  console.log("Digite um valor valido");
+  message = "Digite um horario valido";
 }
+
+console.log(message);
