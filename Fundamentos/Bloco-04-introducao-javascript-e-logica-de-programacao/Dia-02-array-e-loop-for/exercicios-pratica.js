@@ -53,7 +53,11 @@ for (let index = 0; index < numbers.length; index++) {
     numerosImpar.push(numbers[index])
   }
 }
-console.log(numerosImpar);
+if (numerosImpar.length < 1) {
+  console.log('Nao existem numeros impares!');
+} else {
+  console.log(numerosImpar);
+}
 
 //Exercicio 7
 let menorNumero;
