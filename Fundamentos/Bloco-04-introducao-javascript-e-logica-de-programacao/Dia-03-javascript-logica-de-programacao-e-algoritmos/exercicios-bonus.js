@@ -93,3 +93,23 @@ for (let i = 1; i <= mid; i += 1) {
   rigth += 1;
   left -= 1;
 }
+console.log('______________________________');
+console.log(' ');
+
+
+// Exercicio 6
+let numberCkeck = 10;
+let primesList = [];
+
+for (n = 1; n <= numberCkeck; n += 1) {
+  let dividers = 0;
+  for (x = 1; x <= n; x += 1) {
+    if (n % x == 0) {
+      dividers += 1;
+    }
+  }
+  if (dividers == 2) {
+    primesList.push(n);
+  }
+}
+console.log(primesList);
