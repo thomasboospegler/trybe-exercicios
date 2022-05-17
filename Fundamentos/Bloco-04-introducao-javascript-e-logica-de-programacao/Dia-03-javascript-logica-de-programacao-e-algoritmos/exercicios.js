@@ -52,7 +52,9 @@ for (n = 1; n <= 50; n += 1) {
     }
   }
   if (divider == 2) {
-    biggestPrime = n;
+    if (biggestPrime < n) {
+      biggestPrime = n;
+    }
     primesList.push(n);
   }
 }
