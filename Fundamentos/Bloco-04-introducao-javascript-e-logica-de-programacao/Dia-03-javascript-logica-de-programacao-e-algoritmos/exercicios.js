@@ -44,9 +44,9 @@ console.log('A menor palavra deste array é:', menor);
 let biggestPrime = 0;
 let primesList = [];
 
-for (n = 0; n <= 50; n += 1) {
+for (n = 1; n <= 50; n += 1) {
   let divider = 0;
-  for (x = 0; x <= n; x += 1) {
+  for (x = 1; x <= n; x += 1) {
     if (n % x == 0) {
       divider += 1;
     }
