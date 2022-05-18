@@ -219,7 +219,7 @@ console.log(bomDia()); // Bom dia!
 
 
 //Exemplo 2
-let status = 'deslogado';
+let statusLogin = 'deslogado';
 
 function logarDeslogar() {
   if (statusLogin === 'deslogado') {
