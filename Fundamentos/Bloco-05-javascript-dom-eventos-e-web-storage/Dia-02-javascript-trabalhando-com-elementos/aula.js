@@ -41,3 +41,15 @@ console.log(document.getElementById('pai'));
 // 4 - A partir desse filho criado, acesse terceiroFilho.
 let section4 = document.getElementById('elementoOndeVoceEsta').firstElementChild.firstElementChild;
 console.log(section4.parentElement.parentElement.parentElement.children[2]);
+
+// AULA 3
+
+// 1 - Remova todos os elementos filhos de paiDoPai exceto pai, elementoOndeVoceEsta e primeiroFilhoDoFilho.
+let place = document.getElementById('paiDoPai').firstElementChild
+let secondPlace = document.getElementById('elementoOndeVoceEsta')
+place.removeChild(place.firstElementChild);
+place.removeChild(place.lastElementChild);
+place.removeChild(place.lastElementChild);
+place.removeChild(place.lastElementChild);
+secondPlace.removeChild(secondPlace.lastElementChild);
+secondPlace.removeChild(secondPlace.lastElementChild);
