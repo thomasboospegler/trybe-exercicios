@@ -25,3 +25,19 @@ console.log(document.getElementById('elementoOndeVoceEsta').parentNode.children[
 
 // 8 - Agora acesse o terceiroFilho a partir de pai.
 console.log(document.getElementById('pai').children[2]);
+
+// AULA 2
+
+// 1 - Crie um irmão para elementoOndeVoceEsta.
+document.getElementById('pai').appendChild(document.createElement('section'));
+
+// 2 - Crie um filho para elementoOndeVoceEsta.
+document.getElementById('elementoOndeVoceEsta').appendChild(document.createElement('section'));
+
+// 3 - Crie um filho para primeiroFilhoDoFilho.
+document.getElementById('elementoOndeVoceEsta').firstElementChild.appendChild(document.createElement('section'));
+console.log(document.getElementById('pai'));
+
+// 4 - A partir desse filho criado, acesse terceiroFilho.
+let section4 = document.getElementById('elementoOndeVoceEsta').firstElementChild.firstElementChild;
+console.log(section4.parentElement.parentElement.parentElement.children[2]);
