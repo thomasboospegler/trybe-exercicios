@@ -1,0 +1,27 @@
+.preferences {
+  display: flex;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+}
+
+input, h3{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.main-content {
+  margin: 1.5cm;
+}
+
+#title {
+  text-align: center;
+  font-size: 3em;
+}
+
+.description {
+  text-align: center;
+  margin-left: 1.5cm;
+  margin-right: 1.5cm;
+  margin-bottom: 1cm;
+}
