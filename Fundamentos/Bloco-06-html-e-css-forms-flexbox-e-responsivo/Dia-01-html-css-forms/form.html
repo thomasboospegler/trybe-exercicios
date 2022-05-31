@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  body {
+    text-align: center;
+    background-image: url('https://i.stack.imgur.com/jGlzr.png');
+  }
+  #title {
+    background-color: rgb(149, 186, 118);
+    padding: 5px;
+  }
+  #form {
+    border: solid 5px black;
+    background-color: rgb(225, 230, 221);
+    text-align: left;
+    width: 400px;
+    display: inline-block;
+  }
+  #first {
+    display: flex;
+  }
+  #first input {
+    padding: 3px;
+    border-radius: 3px;
+    width: 170px;
+  }
+  input[type="date"] {
+    padding: 1px;
+  }
+  .break {
+    flex-basis: 100%;
+  }
+  .break-column {
+    flex-basis: 100%;
+    width: 0;
+  }
+  #answer-box {
+    margin-top: 0.2cm;
+  }
+  #buttons {
+    text-align: center;
+  }
+  .button {
+    margin: 0 0.3cm;
+  }
+  img {
+    margin-bottom: 0.2cm;
+  }
+</style>
+<header>
+  <h1 id="title">TrybeTrip</h1>
+</header>
+<body>
+  <form action="" method="get">
+    <fieldset id="form">
+      <br>
+      <div id="first">
+        <label>Nome: <input type="text" id="user-name" name="Name" minlength="10" maxlength="40" placeholder="Nome completo" required/></label>
+        <br><br>
+        <div class="break"></div>
+        <label>Email: <input type="email" id="user-email" name="Email" placeholder="Email" required/></label>
+        <div class="break-column"></div>
+        <img src="https://avatars.githubusercontent.com/u/51808343?s=280&v=4" width="50px">
+      </div>
+      <fieldset id="destiny-list">
+        <p>Destino Preferido:</p>
+        <label><input type="radio" id="destinys" name="Destino" value="cidade">Cidade</label>
+        <label><input type="radio" id="destinys" name="Destino" value="campo">Campo</label>
+        <label><input type="radio" id="destinys" name="Destino" value="praia">Praia</label>
+        <label><input type="radio" id="destinys" name="Destino" value="montanhas">Montanhas</label>
+        <br><br>
+        <p>Qual a melhor data para realizar sua viagem?</p>
+        <label>Data: <input type="date" id="travel-date" name="Date"/></label>
+      </fieldset>
+      <fieldset id="answer-box">
+        <p>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p>
+        <textarea name="answer" id="text-answer" cols="50" rows="8" placeholder="Digite sua resposta aqui"></textarea>
+      </fieldset>
+      <br>
+      <label><input type="checkbox" name="agreements" id="agreement-1">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
+      <br>
+      <label><input type="checkbox" name="agreements" id="agreement-2" required>Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+      <br><br>
+      <div id="buttons">
+        <button type="reset" id="reset-button" class="button" value="Reset">Reset</button>
+        <button type="submit" id="submit-button" class="button" value="Send!">Send!</button>
+      </div>
+    </fieldset>
+  </form>
+  <script>
+
+    const submitButton = document.getElementById('submit-button');
+    const inputText = document.getElementById('text-answer');
+
+    submitButton.addEventListener('click', (event) => {
+      if (inputText.value.length < 10) {
+        alert('Dados Inválidos! Digite uma resposta maior!');
+      } else {
+        alert('Dados enviados com sucesso! Obrigado por participar do concurso TrybeTrip.');
+      }
+      event.preventDefault();
+    })
+
+  </script>
+  </body>
+</html>
