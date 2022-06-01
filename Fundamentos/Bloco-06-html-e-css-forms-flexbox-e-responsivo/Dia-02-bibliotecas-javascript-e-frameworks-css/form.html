@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css">
+  <script src="jquery-3.6.0.min.js"></script>
+  <script src="bootstrap-5.2.0-beta1-dist/js/bootstrap.min.js"></script>
+</head>
+<style>
+  body {
+    background-image: url('https://i.stack.imgur.com/jGlzr.png');
+  }
+  header {
+    margin: 15px 0;
+  }
+  header, .container{
+    background-color: rgb(91, 170, 100);
+    padding: 15px;
+    border-radius: 15px;
+    color: black;
+  }
+  input[type] {
+    background-color: rgb(205, 229, 208);
+  }
+</style>
+<header class="container text-center">
+  <img class="rounded float-end img-fluid img-thumbnail" src="https://avatars.githubusercontent.com/u/51808343?s=280&v=4" width="80px">
+  <h1 class="display-2">TrybeTrip</h1>
+</header>
+<body>
+  <form action="" method="get" class="container" id="form">
+    <fieldset class="row mb-3">
+    <div class="col-md-6">
+      <label for="user-name" class="form-label">Nome:</label>
+      <input type="text" class="form-control" id="user-name" name="Name" minlength="10" maxlength="40" placeholder="Nome completo" required>
+    </div>
+    <div class="col-md-6">
+      <label for="user-email" class="form-label">Email:</label>
+      <input type="email" class="form-control" id="user-email" name="Email" placeholder="Email" required>
+    </div>
+    </fieldset>
+    <fieldset class="row mb-3">
+      <legend class="col-form-label col-sm-2 pt-0">Destino Preferido:</legend>
+      <div class="col-sm-10">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+          <label class="form-check-label" for="gridRadios1">
+            Cidade
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+          <label class="form-check-label" for="gridRadios2">
+            Campo
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+          <label class="form-check-label" for="gridRadios3">
+            Praia
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value="option4">
+          <label class="form-check-label" for="gridRadios4">
+            Montanhas
+          </label>
+        </div>
+      </div>
+    </fieldset>
+    <fieldset class="row mb-3">
+        <label class="form-label" for="travel-date">Qual a melhor data para realizar sua viagem?</label>
+      <div class="col-auto">
+        <input class="form-control" type="date" id="travel-date" name="Date"/>
+      </div>
+    </fieldset>
+    <fieldset class="mb-3">
+      <p>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p>
+      <div class="form-floating">
+        <textarea class="form-control" name="answer" id="text-answer" style="height: 100px;background-color: rgb(205, 229, 208);" placeholder="Digite sua resposta aqui"></textarea>
+        <label for="text-answer">Resposta</label>
+      </div>
+    </fieldset>
+    <fieldset class="row mb-3">
+      <div>
+        <input class="form-check-input" type="checkbox" name="agreements" id="agreement-1">
+        <label class="form-check-label" for="agreement-1">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
+      </div>
+      <div>
+        <input class="form-check-input" type="checkbox" name="agreements" id="agreement-2" required>
+        <label class="form-check-label" for="agreement-2">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+      </div>
+    </fieldset>
+    <fieldset>
+      <button type="reset" class="btn btn-primary" id="btn-check-outlined" value="Reset">Reset</button>
+      <button type="submit" class="btn btn-success" name="options-outlined" id="success-outlined" value="Submit">Send!</button>
+    </fieldset>
+  </form>
+  <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+  <script>
+    const validate = new window.JustValidate('#form');
+
+    validate
+      .addField('#user-name', [
+        {
+          rule: 'required',
+          errorMessage: 'Name is required',
+        },
+      ])
+      .addField('#user-email', [
+        {
+          rule: 'required',
+          errorMessage: 'Email is required',
+        },
+        {
+          rule: 'email',
+          errorMessage: 'Email is invalid!',
+        },
+      ])
+      .addField('#travel-date', [
+        {
+          rule: 'required',
+          errorMessage: 'Date is required',
+        },
+      ])
+      .addField('#text-answer', [
+        {
+          rule: 'required',
+          errorMessage: 'Answer is required',
+        },
+        {
+          rule: 'minLength',
+          value: 10,
+        },
+        {
+          rule: 'maxLength',
+          value: 300,
+        },
+      ])
+      .addField('#agreement-2', [
+        {
+          rule: 'required',
+          errorMessage: 'Required',
+        },
+      ])
+      .onSuccess((event) => {
+        alert('Dados enviados com sucesso! Obrigado por participar do concurso TrybeTrip.');
+      });
+  </script>
+  <!-- <script>
+
+    const submitButton = document.getElementById('success-outlined');
+    const inputText = document.getElementById('text-answer');
+
+    submitButton.addEventListener('click', (event) => {
+      if (inputText.value.length < 10) {
+        alert('Dados Inválidos! Digite uma resposta maior!');
+      } else {
+        alert('Dados enviados com sucesso! Obrigado por participar do concurso TrybeTrip.');
+      }
+      event.preventDefault();
+    })
+
+  </script> -->
+  </body>
+</html>
