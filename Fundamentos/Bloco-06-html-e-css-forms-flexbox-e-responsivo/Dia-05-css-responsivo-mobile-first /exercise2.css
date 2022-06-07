@@ -1,0 +1,117 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 15px;
+}
+
+.container header p {
+  text-align: center;
+}
+
+.container header nav ul li {
+  list-style-type: none;
+}
+
+@media screen and (max-width: 600px) {
+  .container header p {
+    font-size: 30px;
+  }
+
+  .container header nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+  }
+
+}
+
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+  .container header p {
+    font-size: 35px;
+  }
+
+  .container header nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+  }
+
+  .asides {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1600px) {
+  .container header p {
+    font-size: 35px;
+    margin-bottom: 10px;
+  }
+
+  .container header nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 20px 25%;
+  }
+
+  main {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .main-content {
+    width: 110%;
+  }
+
+  .asides {
+    width: 30%;
+  }
+
+  aside {
+    margin: 40px 0;
+  }
+
+  aside h2 {
+    margin-left: 20px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1601px) {
+  .container header p {
+    font-size: 35px;
+    margin-bottom: 10px;
+  }
+
+  .container header nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 20px 25%;
+  }
+
+  main {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .asides {
+    width: 60%;
+  }
+
+  aside {
+    margin: 50px 0;
+  }
+
+  aside h2 {
+    margin-left: 20px;
+    margin-bottom: 0;
+  }
+}
