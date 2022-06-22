@@ -19,13 +19,11 @@ console.log(newEmployees(generateEmail));
 
 // Exerciio 2
 
-const sorteio = (num, func) => func(num)
+const checkNumber = (loteryNumber ,num) => loteryNumber === num;
 
-const checkNumber = (num) => {
+const sorteio = (num, func) => {
   const loteryNumber = Math.floor(Math.random() * 6);
-  return loteryNumber === num ? 'Parabéns você ganhou' : 'Tente novamente';
-  // if (loteryNumber === num) return 'Parabéns você ganhou'
-  // else return 'Tente novamente'
+  return func(loteryNumber, num) ? 'Parabéns você ganhou' : 'Tente novamente';
 }
 
 console.log(sorteio(2, checkNumber));
