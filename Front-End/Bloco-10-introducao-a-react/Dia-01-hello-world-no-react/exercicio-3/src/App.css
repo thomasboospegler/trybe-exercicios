@@ -1,0 +1,19 @@
+body {
+  text-align: center;
+}
+
+.title {
+  color: blue;
+}
+
+.content-list {
+  list-style: none;
+}
+
+.content-list-item {
+  text-align: center; 
+}
+
+.footer {
+  color: red;
+}

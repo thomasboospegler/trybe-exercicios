@@ -1,0 +1,12 @@
+{
+  "name": "dia-01-hello-world-no-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "Jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
