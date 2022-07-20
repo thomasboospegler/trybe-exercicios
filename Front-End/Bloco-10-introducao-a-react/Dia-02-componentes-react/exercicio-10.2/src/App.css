@@ -1,0 +1,37 @@
+body {
+  background-color: rgb(234, 235, 236);
+}
+
+.App {
+  text-align: center;
+}
+
+.pokedex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 1em;
+}
+
+.pokemon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 40%;
+  margin: 1em;
+  min-width: 18em;
+  max-width: 25em;
+  border: 2px solid gray;
+  border-radius: 10px;
+  box-shadow: 4px 4px 3px gray;
+  background-color: rgb(221, 223, 224);
+}
+
+.pokemon-info, .pokemon-img {
+  width: 40%;
+}
+
+.pokemon-img img {
+  width: 10rem;
+}
