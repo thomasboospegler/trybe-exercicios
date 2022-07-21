@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+  margin-top: 50px;
+}
+
+button {
+  margin: 10px;
+  width: 200px;
+  height: 60px;
+  font-size: large;
+  border: 2px black solid;
+  border-radius: 10px;
+}
