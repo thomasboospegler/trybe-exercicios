@@ -65,32 +65,27 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 8: JavaScript ES6
 
-- [x] 8-1: _JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort_
-- [x] 8-2: _JavaScript ES6 - Higher Order Functions - map e filter_
-- [x] 8-3: _JavaScript ES6 - Higher Order Functions - reduce_
-- [x] 8-4: _JavaScript ES6 - spread operator, rest parameter, destructuring e mais_
-- [x] 8-5: _[Projeto - Zoo functions](https://github.com/tryber/sd-023-a-project-zoo-functions/tree/thomas-pegler-zoo-functions-project)_
+- [x] 8-1: _JavaScript ES6 - Introdução a Higher Order Functions
+- [x] 8-2: _JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort_
+- [x] 8-3: _JavaScript ES6 - Higher Order Functions - map e filter_
+- [x] 8-4: _JavaScript ES6 - Higher Order Functions - reduce_
+- [x] 8-5: _JavaScript ES6 - spread operator, rest parameter, destructuring e mais_
+- [x] 8-6: _[Projeto - Zoo functions](https://github.com/tryber/sd-023-a-project-zoo-functions/tree/thomas-pegler-zoo-functions-project)_
 
 ## Desenvolvimento Front-end :hourglass_flowing_sand:
 
-##### Bloco 9: Assincronicidade & Callbacks
+##### Bloco 9: JavaScript e Testes Assíncronos
 
 - [x] 9-1: _JavaScript Assíncrono e Callbacks_
-- [x] 9-2: _JavaScript Promises_
-- [ ] 9-3: _[Projeto - Carrinho de Compras]()_
+- [x] 9-2: _JavaScript Assíncrono - Fetch API e async/await_
+- [x] 9-3: _Testes Assíncronos_
+- [x] 9-4: _[Projeto - Carrinho de Compras](https://github.com/tryber/sd-023-a-project-shopping-cart/tree/thomas-pegler-shopping-cart)_
 
-##### Bloco 10: Jest
+##### Bloco 10: Introdução - React
 
-- [ ] 10-1: _Primeiros passos no Jest_
-- [ ] 10-2: _Jest - Testes Assíncronos_
-- [ ] 10-3: _Jest - Simulando comportamentos_
-- [ ] 10-4: _[Projeto - Jest Assíncrono e Mocking]()_
-
-##### Bloco 11: Introdução - React
-
-- [ ] 11-1: _'Hello, world!' no React!_
-- [ ] 11-2: _Componentes React_
-- [ ] 11-3: _[Projeto - Movie Cards Library]()_
+- [x] 10-1: _'Hello, world!' no React!_
+- [x] 10-2: _Componentes React_
+- [x] 10-3: _[Projeto - Solar System](https://github.com/tryber/sd-023-a-project-solar-system/tree/thomas-pegler-sd-023-a-project-solar-system)_
 
 ##### Bloco 12: React
 
