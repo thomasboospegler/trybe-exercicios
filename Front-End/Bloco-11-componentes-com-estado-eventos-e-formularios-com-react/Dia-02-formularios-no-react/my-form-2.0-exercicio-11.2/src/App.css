@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  background-color: rgb(226, 226, 226);
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  margin: 0.5rem 2rem;
+}
+
+h3 {
+  width: 100%;
+  text-align: center;
+  margin-top: 0;
+}
+
+.personal-info-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  justify-content: space-around;
+}
+
+.personal-info-container label {
+  margin: 10px 0;
+}
+
+.personal-info-container input, .personal-info-container select {
+  padding: 5px;
+  margin-left: 8px;
+  background-color: rgb(242, 242, 242);
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+.work-info-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  justify-content: space-around;
+}
+
+#cargo-container {
+  width: 100%;
+}
+
+.work-info-container textarea{
+  padding: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 99%;
+  background-color: rgb(242, 242, 242);
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.big {
+  width: 100%;
+}
+
+.big textarea{
+  height: 10rem;
+}
+
+.buttons {
+  text-align: center;
+}
+
+button {
+  padding: 10px;
+  width: 10rem;
+  margin: 10px;
+  border-radius: 3px;
+  border: 1px solid black;
+}
+
+button:hover {
+  padding: 11px;
+  background-color: rgb(204, 204, 204);
+  box-shadow: 3px 3px 3px gray;
+}
+
+.result-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  font-size: large;
+}
