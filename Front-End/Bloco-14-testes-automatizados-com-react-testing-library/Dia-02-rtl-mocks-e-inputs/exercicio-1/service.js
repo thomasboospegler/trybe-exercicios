@@ -10,8 +10,7 @@ async function fetchDog() {
   const URL = "https://dog.ceo/api/breeds/image/random"
   const response = await fetch(URL);
   const json = await response.json();
-  return await (
-    response.ok ? Promise.resolve(json) : Promise.reject(json));
+  return await (response.ok ? Promise.resolve(json) : Promise.reject(json));
 }
 
 module.exports = {
