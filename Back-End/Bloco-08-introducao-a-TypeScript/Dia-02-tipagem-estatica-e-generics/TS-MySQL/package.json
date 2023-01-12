@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "@types/readline-sync": "1.4",
+    "dotenv": "10.0",
+    "mysql2": "2.3",
+    "readline-sync": "1.4"
+  },
+  "devDependencies": {
+    "@types/node": "18.11"
+  }
+}
